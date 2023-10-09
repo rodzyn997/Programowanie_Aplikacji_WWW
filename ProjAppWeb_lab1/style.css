@@ -47,4 +47,20 @@ body {
 .tekst {
 	font-family:Helvetica;
 	 font-size: 18px;
+   
+}
+.zdjecie { 
+  padding-right: 200px;
+  float: right;
+  width: 400px;
+  height: 300px;
+}
+.zdjecie2{ 
+
+  width: 400px;
+  height: 300px;
+}
+
+.margg{
+  margin: 10px;
 }
