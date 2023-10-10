@@ -49,6 +49,14 @@ body {
 	 font-size: 18px;
    
 }
+.tekst2 {
+  font-family:Helvetica;
+   font-size: 18px;
+    text-align: left;
+    padding: 10px 100px;
+    float: left;
+   
+}
 .zdjecie { 
   padding-right: 200px;
   float: right;
@@ -60,6 +68,14 @@ body {
   width: 400px;
   height: 300px;
 }
+.zdjecie3{ 
+
+  width: 400px;
+  height: 300px;
+  float: center;
+ 
+}
+
 
 .margg{
   margin: 10px;
