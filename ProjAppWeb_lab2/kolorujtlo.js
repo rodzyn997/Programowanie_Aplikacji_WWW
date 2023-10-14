@@ -38,3 +38,10 @@ function changeBackground(hexNumber)
 {
     document.bgColor = hexNumber;
 }
+
+function changeTime(hexNumber)
+{
+    document.getElementById("zegarek").style.color = hexNumber;
+    document.getElementById("data").style.color = hexNumber;
+
+}
