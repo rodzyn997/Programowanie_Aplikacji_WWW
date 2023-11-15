@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="css/style2.css" />
+</head>
+    <body>
+
+        <div id="animacjaTest1" class="test-block">kliknij, a sie powieksze</div>
+        <script>
+            $("#animacjaTest1").on("click", function(){
+                $(this).animate({
+                    width: "500px",
+                    opacity: 0.4,
+                    fontsize: "3em",
+                    borderwidth:"10px"
+                }, 1500);
+            });
+        </script>
+        </br>
+                <div id="animacjaTest2" class="test-block">najedź, a sie powieksze</div>
+                <script>
+                    $("#animacjaTest2").on({"mouseover" : function(){
+                        $(this).animate({
+                            width: 300,
+                        }, 800);
+                    },
+                    "mouseout" : function(){
+                        $(this).animate({
+                            width: 200,
+                        }, 800);
+                    } 
+                });
+                </script>
+        </br>
+        <div id="animacjaTest3" class="test-block">kliknij, a urosne</div>
+
+        <script>
+            $("#animacjaTest3").on("click", function () {
+                if (!$(this).is(":animated")) {
+                    $(this).animate(
+                        {
+                            width: "+=50",
+                            height: "+=10",
+                            opacity: "-=0.1"
+                        },
+                        3000
+                    );
+                }
+            });
+        </script>
+    
+
+    </body>
+</html>
